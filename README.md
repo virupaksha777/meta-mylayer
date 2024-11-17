@@ -14,25 +14,20 @@ cd recipes-myapp/myapp
 touch myapp_1.0.bb
 bitbake myapp
 ```
-## Create new rootfs
+## Create new rootfs 
 
 ```bash
 cd <home/vj4dsc/yoctotutor/sources/meta-mylayer>
 mkdir -p recipes-image/image 
 cd recipes-image/image
 touch core-image-yoctotutor.bb
-
-````code
-
 inherit core-image
-
 IMAGE_INSTALL += "\
 		hello \
 		libmodbus \
 		hellocpp \
 		hellomake \
 	"
-````
 bitbake core-image-yoctotutor
 ```
 
