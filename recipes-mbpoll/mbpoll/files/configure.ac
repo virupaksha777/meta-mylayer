@@ -1,0 +1,5 @@
+AC_INIT([mbpoll], [0.1], [virupaksha])
+AM_INIT_AUTOMAKE
+AC_PROG_CXX
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
