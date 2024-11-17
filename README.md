@@ -42,3 +42,8 @@ add your patch in recipes
 [refer this](https://medium.com/@4318_26766/creating-and-using-dynamic-libraries-in-c-language-912b078b7c52)
 
 ## Compiling C source code using autotools
+[Refer for more understanding](https://medium.com/@Mehul2802/compiling-c-source-code-using-autotools-6285a033912b
+
+https://www.gnu.org/software/automake/manual/html_node/amhello_0027s-Makefile_002eam-Setup-Explained.html
+
+https://earthly.dev/blog/autoconf/)
