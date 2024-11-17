@@ -7,6 +7,33 @@ cd <yoctotutor>
 source sources/poky/oe-init-build-env
 bitbake-layers create-layer ../meta-mylayer
 bitbake-layers add-layer ../meta-mylayer
+bitbake-layers show-layers
+cd <home/vj4dsc/yoctotutor/sources/meta-mylayer>
+mkdir -p recipes-myapp/myapp 
+cd recipes-myapp/myapp
+touch myapp_1.0.bb
+bitbake myapp
+```
+## Create new rootfs
+
+```bash
+cd <home/vj4dsc/yoctotutor/sources/meta-mylayer>
+mkdir -p recipes-image/image 
+cd recipes-image/image
+touch core-image-yoctotutor.bb
+
+````code
+
+inherit core-image
+
+IMAGE_INSTALL += "\
+		hello \
+		libmodbus \
+		hellocpp \
+		hellomake \
+	"
+````
+bitbake core-image-yoctotutor
 ```
 
 ## Important tutorials
